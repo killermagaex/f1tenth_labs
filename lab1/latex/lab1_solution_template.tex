@@ -93,10 +93,10 @@
 	
 	\subsection{Written Questions}
 	\begin{enumerate}
-		\item Answer here
-		\item Answer here
-		\item Answer here
-		\item Answer here
+		\item CMakeList is the input for the CMake build system for building software packages, it describes how to build the code and where to install it. CMake differs from a make file in the case where CMake is a generator of buildsystems where a make file is a buildsystem.
+		\item Yes. Yes.
+		\item You would use it in the workspace.
+		\item sourcing setup.bash files, sources the defined variables in the setup.bash files. Different setup.bash files contain different defined variables, sourcing from ros/melodic will provide the defined variables needed for ROS, whereas sourcing from devel/ will provide the defined variables from that workspace only.
 		
 	\end{enumerate}{}
 
@@ -105,10 +105,10 @@
 	\subsection{Written Questions}
 	\begin{enumerate}
 		\item Answer here
+		\item There is no nodehandle object in python. Rospy.init_node() function creates the ROS node in python
 		\item Answer here
 		\item Answer here
-		\item Answer here
-		\item Answer here
+		\item Callbacks can be controlled by having another function called callback(), which is invoked whenever the subscriber receives data from the publisher through the topic it is subscribed to. rospy.spin() or an equivalent is generally required when the node has a subscriber, this allows the node to continue subscribing to the topic and invoke the callback function when the subscribed topic has data sent.
 	\end{enumerate}{}
 			
 	\section{ Implementing Custom Messages}
@@ -116,15 +116,15 @@
 	\subsection{Written Questions}
 	\begin{enumerate}
 		\item Answer here
-		\item Answer here 
+		\item The header is used mainly for historical reasons, such as preserving recorded data. It provides information such as the sequence ID, timestamp and framed ID.
 	\end{enumerate}{}
 
 	\section{Recording and Publishing Bag Files}
 	\subsection{Written Questions}
 	
 	\begin{enumerate}
-		\item Answer here
-		\item Answer here 
+		\item The file is saved in the bagfile folder under home as I ran “mkdir ~/bagfiles” and “cd ~/bagfiles” before recording. The bag file can be changed by changing directories before recording.
+		\item It will be saved in ~/ros folder. It can be changed by adding an additional arg in the launch file.
 	\end{enumerate}{}
 
 
